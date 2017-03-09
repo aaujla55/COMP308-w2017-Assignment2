@@ -1,0 +1,98 @@
+<!-- My Portfolio-->
+<!-- Author: Amandeep Aujla, JAN 2017-->
+<!-- File Name: contactMe.ejs-->
+<!-- Contact Me Page: Information how to contact me -->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title><%= title %></title>
+    <!--CSS -->
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css' />
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css' />
+       <link rel='stylesheet' href='/Content/app.css' />
+    
+  </head>
+  
+  <body>
+  <!--Scripts -->
+    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
+    <script src ="/Scripts/app.js"></script>
+
+     <!--Header -->
+        <% include ./partials/header %>
+
+    <!--Main outer Box -->
+    <div class="outerbox"> 
+    <div class = "page-header">
+    <h1>GET IN TOUCH WITH ME<h1>
+    </div>
+    <div class= "txt-description">
+    <p>Part of my work and hobbies can be found online. Some bits here, and some bits there.</p>
+    </div>
+  
+       <!--<div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/network.jpg" data-toggle="tooltip" data-placement="top" title="Basic product catalogue"/>
+                  <div class="overlay">
+                  <h2>CONNECT ME ON LINKEDIN</h2>
+                 <a class="info" href="https://ca.linkedin.com/in/amandeep-aujla-1548b1b4">GO</a>
+                </div>
+               </div>
+               </div>
+               </div>-->
+             
+    <div class= "txt-description">
+    <p> If you want to see more of my work or have a rather interesting project, whether is code or design, do contact me. Who knows? Maybe we could end up working together.</p>
+    </div>
+   
+    <div class="innerBox">
+        <form>
+
+        <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Name</label>
+        <div class="col-10">
+        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+        </div>
+
+        </div>
+          <div class="form-group row">
+          <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
+          <div class="col-10">
+            <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+          </div>
+        </div>
+
+        <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">Email</label>
+        <div class="col-10">
+          <input class="form-control" type="email" value="youremail@example.com" id="example-email-input">
+        </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="exampleTextarea">Comments/Leave Message</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+
+       <button type="submit" class="btn btn-default center-block">Submit</button>
+
+    </div>
+        </form>
+    
+    <div class= "wrapper-for-images-no-hover">
+    </div>
+    
+    </div>
+    <div>
+       
+        <!--Footer -->
+         <% include ./partials/footer %>
+         
+     </body>
+</html>

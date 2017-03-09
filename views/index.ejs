@@ -1,0 +1,68 @@
+<!-- My Portfolio-->
+<!-- Author: Amandeep Aujla, JAN 2017-->
+<!-- File Name: index.ejs-->
+<!-- Home Page:Home Page of the website-->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title><%= title %></title>
+    <!--CSS -->
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css' />
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css' />
+       <link rel='stylesheet' href='/Content/reset.css'/>
+       <link rel='stylesheet' href='/Content/app.css' />
+    
+  </head>
+  
+  <body>
+  <!--Scripts -->
+    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <!--<script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js">-->
+   <script src ="/Scripts/app.js"></script></script>
+ 
+        <!--Header -->
+        <% include ./partials/header %>
+
+       <!--Main outer Box -->
+        <div class="outerbox">
+
+        <div class ="profile-image">
+        <img src="/Assets/images/aman.jpg"/>
+        </div>
+        <div class="name">
+        <h3 class="title">Amandeep Aujla</h3>
+        <h6>STUDENT</h6>
+        </div>
+        <div class="txt-description">
+         Hello, I'm Amandeep Aujla - Indian - Currenly a Software Engineering student at Centennial College, Scarborough.
+         I am driven by creating unique and innovative designs. I have professioinal work experience for 8 months as a "developer".
+        </div>
+        <div class="txt-description">Hope you will enjoy!!</div>
+        <!-- +++++++++++++++++++++++++++++++++++++++Body Nav ++++++++++++++++++++++++++++++++++++++= -->
+        <nav id="navigationTab">
+        <ul class="nav-tab">
+        <li class="nav-tab-gallery"><a href ="/projects"><!-- Picture icon by Icons8 -->
+        <img class="icon icons8-Picture" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB2klEQVRoQ+2YfVHEMBDFf6cAHAAOQAE4AAmgAFAAKAAUgARwgAOQcCgAFMC8mWYml26blib9uEn+6rRN9r19u8lmVyx8rBaOn0JgagWLAkWBgR7Y2hDaB+6BQ0DPU4418AFcA3reGJYCAvwO7E6J2rD9DRyFJCwCL8DpzMA7OK/AmY/NIvA1Q+87zAqhgxiB3w5hNqZArXgsBQqBxPIUBXIddtqmb7xd5Rm4M9SbrQIPwGUA+BG4Ct7NloC1Xde2SWC2BHSy7gTe/jRKl6wEzoHjqk4RoD7jtsoBf45yQO/9kY2AwD9VllRsXVRFVx8SygNXGiiJQ/BaKwsBH7wDLAVUMQpIypGcgAXeBywCItI3pJpIJycQLmgZtkLqpIp5p1Sttm9gMAkBYfGB6sASAT/cFP/WwRXymIxAlzyQCkr+t5afZ03A4dYlyrwy5tiFuuRAF++H/yjkrLBahAI+mbB4LARiHvlPuLTNidnb+F6ulKndb6yXPAdGwDxONToWkd4KWBeNscDG7NQuPFvZWlRzV9VkeN2LeSf395+qW75RxTa1TERCx7ra63u5kUXWV9jIoepWdGqvT4y3n/lcTat+KAb8XQgMcF6SqUWBJG4csEhRYIDzkkz9A0CcdTFp6uHCAAAAAElFTkSuQmCC" width="48" height="48">Projects</a></li>
+        <!-- Folder icon by Icons8 -->
+
+        <li class="nav-tab-content"><a href ="/services"><!-- File icon by Icons8 -->
+        <img class="icon icons8-File" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABMklEQVRoQ+2Z7Q0BQRCGHxXQASXohBLoQCd0QAlUQglUgArIJCcRYU125m73ktlf92Nnd553PvaSGdDzNei5/wRA6QhqIzAB1sAUkG/L2gFLywHvthoAcfgIjLwuBdwgNAB7YObo/OsoFwgNwNVJfUmb7YcQZggNwMNJfblr4Q3RNYBo4QpRAsAVohSAG0RJABeI0gBmiBoATBC1AGRD1ATwCyLpY20A3yCqAch90APA618oIvBNgS6LOCIQEcjNAaNdtNFoo5FCCQXiHTCmh8Y8ulB0IU2e5NZpFLFRXY15FHEUsSZP2iziGzA0OpFrfvk3k9N0obZGTBqoAzBPbdQAyJDvVCAK92YqerYCiL1AbJoDxxrpDHskbUSwFZB0Xu7QRMDgS/umAdC+xukbeh+BJwHhRjHxTwxxAAAAAElFTkSuQmCC" width="48" height="48">Services</a></li>
+        <li class="nav-tab-aboutme"><a href="/aboutMe"><!-- Contacts Filled icon by Icons8 -->
+        <img class="icon icons8-Contacts-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACqUlEQVRoQ+2Zj00dMQyHf0wATABMQJmgMEFhgsIEwASlG7QTlE4ATEA7QdkAmIBuAPqkS0nv3eVix0+c0LN00tNT/viz48Rx1vROZO2dcGgFUuHJD5I+de34vSHprvt+VvQ3NVmGR04lnUnaLmjyIOmogzIpPNY4EgSL/5B0WKnZX0mXkvAOnmqSSJArA0Rf6QtJX1tIokDwAiAtctJ5yDVGFMgvSR9dGrx2Im52vGNEgBAbT14Fev0OJGEUs0SA7Eu6Nc883MG9vOYGQsAT+GZZgWQmi1xa55K+md0hheRakSBvGuwY8NljxYE+bL9sw2aJiBEmZfIt8+z/d3icyM+Kw0eBkDN9bgQh5zr2jhEF8kcSqXqLcBASIy6JAIkM9j1vJrwCyfwfmWu5Devu2FvIEcH+vbtZvlmMpIlbYJogUCDKI4zVcrlyB3myYiQIY3IPXzeujaaDcFkgpOBfjCDu1D2fJ9oj7GCkK7VewRscpHiySaJBUMbiFfeNsE+9DBDLSe/OducGEmbIsIEyC1m24eZtd1m7FuNyVaX+WyMhO1b0gciOxe5jiZHkkdS3Bn6wTcTSourO2cGSIniBuc6eFMaUS2lJSjpJcfjPVdBuAcHyLKG8+p4rx0Vpd4Tid9cP6H7xm36pSl/tIQ8IV1rOirH3j/xs4J0E0FQXBgAl+RCutjxFDAmQxBvGmTwwLSB4gElLDzhJIQBQoCQsx5qqIhDUuxJ8U4zUTppPQqqCRW+yEg/pCN6ZetEaUhYQvO0GsWyn1Wva2XAUZmppldawU5fmboNl1SmQ+8qYaNbOMAAxs9lvXwKZozeS/gtZcwmk5Q5uMLCr6UJVsgQS8S7o0rKiE+cRx8E/KYHMMT6S4gsPp1PBXmGceTRZgczDD3UxMjddi/q8AL0/dDOoXsidAAAAAElFTkSuQmCC" width="50" height="50">About me</a></li>
+        </ul>
+        </nav>
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <div class= "wrapper-for-images-no-hover">
+        </div>
+
+        </div>
+
+        <!--Footer -->
+         <% include ./partials/footer %>
+
+  </body>
+</html>

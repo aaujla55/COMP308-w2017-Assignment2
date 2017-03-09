@@ -1,0 +1,65 @@
+<!-- My Portfolio-->
+<!-- Author: Amandeep Aujla, JAN 2017-->
+<!-- File Name: aboutMe.ejs-->
+<!-- About Me Page: description about me -->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title><%= title %></title>
+    <!--CSS -->
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css' />
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css' />
+       <link rel='stylesheet' href='/Content/reset.css'/>
+       <link rel='stylesheet' href='/Content/app.css' />
+    
+  </head>
+  
+  <body>
+  <!--Scripts -->
+    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
+    <script src ="/Scripts/app.js"></script>
+
+     <!--Header -->
+        <% include ./partials/header %>
+
+    <!-- Main Outer Box-->
+    <div class="outerbox"> 
+    <div class = "page-header">
+    <h1>ABOUT ME<h1>
+    </div>
+    <!-- TO DO: Include likedln and github icon links on page-header-->
+    <div id = "about-me-wrapper">
+    <img src ="/Assets/images/about-me-pic.jpg"/>
+    </div>
+    <br><br><br>
+
+    <div class="txt-description">
+    <p> Holla!!!! I am Indian breathing in Canada. I am 21 year old. An international student at Centennial College. Currently in my 5th Semester in Sofware Engineering Technology Co-op.I am a complete fresher in development Industry. Keen interest in web design and development.</p>
+    </div>
+     <div class= "txt-description">
+    <p>My experince in Canada upto now has been amazing. I worked as a "Technical System Analyst Co-op" for 8 months in RBC. It was a great experince in front end and back-end development. Got insight of work-life in Canada. </p>
+    </div>
+    <div class= "txt-description">
+    <p>I'm endlessly seeking for an excuse to create a concept, design, code, handcraft, sketch or learn something new. Never stop learning!I have a various set of skills, since I have a passion to work with not only one in particular. However, only a few of them are my best expertise.</p>
+    </div>
+
+    <div class= "txt-description">
+    <p>In love with all design, music and the internet lifestyle we're living and experiencing still today.I am a music person. My interests do not limit there. I paint abstract water paintings. Basically, I love playing with colors. I like to mix and match different color combinations in all my daily routine and work too. My dream is to travel world, visit and explore different places</p>
+    </div>
+
+    <div class= "wrapper-for-images-no-hover">
+    </div>
+    
+    </div>
+   
+        <!--Footer -->
+         <% include ./partials/footer %>
+         
+     </div>
+  </body>
+</html>

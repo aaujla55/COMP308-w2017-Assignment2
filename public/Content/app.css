@@ -1,0 +1,363 @@
+/*AUTHOR: Amandeep Aujla*/
+/*Basic CSS goes here*/
+/*Website Name: https://expressportfolio-aaujla.herokuapp.com/*/
+
+
+body{
+margin:0;
+background-color:#CBCBCB;
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.outerboxnav{
+	max-height: 250px;
+	height:250px;
+	background: url(/Assets/images/banner-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -325px;
+	
+}
+
+.outerboxnav img{
+	max-height:100%;
+	display:block;
+	margin:auto;
+}
+
+
+ul.topnav{
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+	overflow:hidden;
+	position: fixed;
+	width: 100%;
+}
+
+ul.topnav li{float:left;}
+
+ul.topnav li a {
+	display:inline;
+	color:#f2f2f2;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	transition:0.3s;
+	font-size:17px;
+}
+
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width: 1024px){
+    .outerboxnav{
+	    background-position-y: -325px; }
+}
+/* When the screen is less than 680 pixelsdwide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+   /* float: right;*/
+    display: inline-block;
+  }
+  
+}
+@media (max-width:1186px) and (min-width:681px)
+{
+ .outerboxnav{
+	    background-position-y: -60px; }
+}
+
+@media (max-width:593px) and (min-width:691px)
+{
+ .outerboxnav{
+	    background-position-y: -100px; }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    /*float: none;*/
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .outerboxnav{
+	    background-position-y: 0px; }
+}
+
+.outerbox{
+	margin-left:3%;
+	margin-right:3%;
+	background-color:#FFFFFF;
+	height:80%;
+	border-radius: 5px;
+	margin-top:-48px;
+	box-shadow: -5px 15px 36px 3px rgba(0,0,0,0.29);
+}
+
+.outerbox .profile-image img{
+	margin-left:45%;
+	margin-right:39%;
+	border-radius:537px;
+	margin-top:-61px;
+	border:5px white;
+	box-shadow: -5px 9px 36px 3px rgba(0,0,0,0.29);
+	width:11%;
+	min-width:11%;
+	
+}
+
+/*my image hover over style - common property*/
+.img-hover-over{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+/*TO DO: Update to common .img-hover-over*/
+.outerbox .profile-image img:hover{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+
+
+.footer{
+	width: 100%;
+	position: absolute;
+	margin-top:-35px;
+	color:#fff;
+	background-color:rgb(228, 112, 112);
+	padding-top: 95px;
+	padding-bottom: 66px;
+	z-index: -1;
+	text-align: center;
+}
+
+.title {
+    font-weight: 500;
+    color: #3C4858;
+}
+h3 {
+	padding:10px;
+    display: block;
+    font-size: 1.17em;
+    text-align:center;
+    font-weight: bold;
+}
+h6{
+	color: rgba(145, 145, 145, 1);
+	display:block;
+	font-size:14px;
+	font-weight:300;
+	text-align: center;
+	
+}
+.txt-description{
+	    color:rgba(145, 145, 145, 1);
+		text-align:center;
+		padding:10px;
+		margin-left:20%;
+		margin-right:20%;
+		margin-top:2%;
+		
+}
+#navigationTab {
+	margin: 5% 40% 5% 40%;
+}
+
+.nav-tab
+{
+	display:inline-block;
+}
+
+#navigationTab .nav-tab li{
+	/*display:inline;*/
+	float:left;
+	margin-right:4px;
+	margin-top:4px;
+}
+
+#navigationTab .nav-tab li a{
+	display:block;
+	text-decoration:none;
+	padding: 1px;
+	background-color:rgb(228, 112, 112);
+	border-radius:5px;
+	color:black;
+	width: 72px;
+	height:82px;
+	text-align:center;
+}
+
+#navigationTab .nav-tab li a img{
+	margin-left:0.5em;
+	
+}
+#navigationTab .nav-tab li a:hover{
+	color:white;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.page-header{
+	padding-top: 20px;
+	display: block;
+	box-sizing: border-box;
+	font-family: "Open Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400px;
+	line-height: 25.6px;
+	word-wrap:break-word;
+}
+.page-header h1{
+	text-align: center;
+}
+h1{
+	line-height: 2.3em;
+	font-size: 2.2em;
+}
+
+
+/* About me page Styles*/
+#about-me-wrapper{
+	width: 34%;
+	max-width: 34%;
+	height: 34%;
+	margin-left: 33%;
+	box-shadow: -5px 15px 36px 3px rgba(0,0,0,0.29);
+}
+
+#about-me-wrapper img{
+	 display: block;
+     width: 100%;
+}
+
+#about-me-wrapper img:hover{
+	box-shadow: -5px 9px 36px 3px #fff;
+}
+
+.wrapper-for-images-no-hover{
+	height: 100px;
+	width: 34%;
+	max-width: 34%;
+	background: url(/Assets/images/floral-horizontal-ruler.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 5% 53% 5% 32%;
+	background-position: center;
+}
+
+.wrapper-for-images-no-hover img{
+	 max-height:100%;
+	 width: 100%;
+	 display:block;
+	 margin:auto;
+}
+
+
+/* projects*/ 
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color:rgb(228, 112, 112);;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: -52px 0 0 0;
+  padding: 62px 100px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+
+/*Contact me Styles*/
+.innerBox{
+	    padding:10px;
+		margin-left:20%;
+		margin-right:20%;
+		margin-top:2%;
+}
+
+innerBox-image{
+	margin-left:40%;
+}

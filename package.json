@@ -1,0 +1,36 @@
+{
+  "name": "comp308-w2017-assignment1",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "method": "^2.0.0",
+    "morgan": "^1.7.0",
+    "serve-favicon": "~2.3.2",
+    "session": "^0.1.0"
+  },
+  "description": "assignment 1 Portfolio",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [
+    "assign1",
+    "expressJs",
+    "NodeJs",
+    "Clould",
+    "hosting"
+  ],
+  "author": "Amandeep Aujla",
+  "license": "ISC"
+}

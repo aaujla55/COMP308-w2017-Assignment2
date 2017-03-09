@@ -1,0 +1,126 @@
+<!-- My Portfolio-->
+<!-- Author: Amandeep Aujla, JAN 2017-->
+<!-- File Name: projects.ejs-->
+<!-- Projects Page: Show projects -->
+<!-- Website Name: https://expressportfolio-aaujla.herokuapp.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title><%= title %></title>
+    <!--CSS -->
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css' />
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css' />
+       <link rel='stylesheet' href='/Content/app.css' />
+    
+  </head>
+  
+  <body>
+  <!--Scripts -->
+    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
+    <script src ="/Scripts/app.js"></script>
+
+    <!--Header -->
+        <% include ./partials/header %>
+
+     <!--Main outer box -->
+    <div class="outerbox"> 
+    <div class = "page-header">
+    <h1>BROWSE MY WORK<h1>
+    </div>    
+    <!-- Page Content -->
+    <div class="container">
+   
+    <div class= "txt-description">
+    <p>Most of the projects are my college projects.Depending on the nature of the project I'm working with, sometimes I only do Web Design, or only Front-End Development. Sporadically, I end up doing both. Sometimes, back-end too.....</p>
+    </div>
+     <BR><BR>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj9.jpg" data-toggle="tooltip" data-placement="top" alt="Basic product catalogue" title="Basic product catalogue"/>
+                  <div class="overlay">
+                  <h2>Add to Cart</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/assignment2.html">SHOW</a>
+                </div>
+               </div>
+             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj2.jpg" data-toggle="tooltip" alt="JS Validation Example">
+                  <div class="overlay">
+                 <h2>Registration Form</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/assignment3.html">SHOW</a>
+                </div>
+               </div>
+             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj3.png" data-toggle="tooltip" title="Real Estate Website">
+                  <div class="overlay">
+                 <h2>Real Estate</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/realEstate/index.html">SHOW</a>
+                </div>
+               </div>
+             </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj4.jpg" data-toggle="tooltip" alt="Canvas Game" title="Canvas Game" >
+                  <div class="overlay">
+                 <h2>Bug Smasher</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/game.html">SHOW</a>
+                </div>
+               </div>
+             </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj1.jpg" data-toggle="tooltip" title="JS Validation Form">
+                  <div class="overlay">
+                 <h2>Rent Vehicle</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/PracticalTest300823928.html">SHOW</a>
+                </div>
+               </div>
+             </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj6.jpg" data-toggle="tooltip" title="EHR Documented Deployment Analysis">
+                  <div class="overlay">
+                 <h2>EHR DEPLOYMENT</h2>
+                 <a class="info" href="https://drive.google.com/open?id=0B_iVCkTj_CxWekdVd3JhLUEwYmc">SHOW</a>
+                </div>
+               </div>
+             </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj7.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>Gym Management System</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/Gym.pdf">SHOW</a>
+                </div>
+               </div>
+             </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="/Assets/images/proj8.jpg" data-toggle="tooltip" title="Information system">
+                  <div class="overlay">
+                 <h2>Pharmacy Management System</h2>
+                 <a class="info" href="http://studentweb.cencol.ca/aaujla5/Pharmacy.pdf">SHOW</a>
+                </div>
+               </div>
+             </div>
+          
+        </div>
+         <div class= "wrapper-for-images-no-hover">
+        </div>
+        </div>
+        </div>
+        
+        <!--Footer -->
+         <% include ./partials/footer %>
+         
+  </body>
+</html>
