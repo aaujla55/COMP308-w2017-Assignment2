@@ -20,26 +20,25 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', index);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+// Handle 404 Errors
+  app.use(function(req, res) {
+      res.status(400);
+     res.render('errors/404',{
+      title: '404: File Not Found'
+    });
+  });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+  // Handle 500 Errors
+  app.use(function(error, req, res, next) {
+      res.status(500);
+      res.render('errors/500', {
+        title:'500: Internal Server Error',
+        error: error
+      });
+  });
 
 module.exports = app;
