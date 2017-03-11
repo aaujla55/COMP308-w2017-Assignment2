@@ -1,6 +1,6 @@
 /*AUTHOR: Amandeep Aujla*/
 /*Basic JAVASCRIPT/JQUERY goes here*/
-/*Website Name: https://expressportfolio-aaujla.herokuapp.com/ */
+/*Website Name: https://comp308-w17-assignment2.herokuapp.com// */
 
  $(document).ready(function(){
       $(window).scroll(function() { // check if scroll event happened
@@ -18,3 +18,13 @@
     function myFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
     }
+ 
+ // IIFE
+(function(){
+  $(".btn-danger").click(function(event){
+    if(!confirm("Are you sure?")) {
+      event.preventDefault();
+      window.location.assign("/games");
+    }
+  });
+})();
