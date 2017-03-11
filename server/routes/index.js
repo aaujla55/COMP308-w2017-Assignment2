@@ -39,7 +39,7 @@ router.get('/', function(req, res, next) {
 router.get('/aboutMe', function(req, res, next)
 {
  res.render('content/aboutMe',{
-   title: 'About Me',
+   title: 'AboutMe',
    businessContacts : '',
    displayName: req.user ? req.user.displayName : ''
   });
@@ -49,7 +49,7 @@ router.get('/aboutMe', function(req, res, next)
 router.get('/contactMe',function(req, res, next)
 {
 res.render('content/contactMe',{
-  title: 'Contact Me',
+  title: 'ContactMe',
   businessContacts : '',
   displayName: req.user ? req.user.displayName : ''});
 });

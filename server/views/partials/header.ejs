@@ -5,14 +5,22 @@
  File Description: Header File.
 -->
  
- 
+  <head><title><%= title %></title></head>
  <!--Navigation -->
     <div class="outerboxnav">
         <ul class="topnav">
-        <li><a href="/">Home</a><li>
+
+        <li><a href="/"> Home</a></li>
         <li><a href="/projects">Projects</a><li>
         <li><a href="/contactMe">Contact Me</a><li>
-        <li><a href="/Login">Login</a></li>
+      
+        
+       <% if(typeof displayName == 'string' && displayName) { %>
+          <li> <a>Welcome, <%= displayName %></a></li>
+          <li><a href="/logout">Logout</a></li>
+        <% } else { %>
+          <li><a href="/login"> Login</a></li>
+        <% } %>
         <li class="icon">
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
           </li>

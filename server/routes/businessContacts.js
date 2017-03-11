@@ -41,7 +41,7 @@ router.get('/', requireAuth, (req, res, next) => {
 //  GET the businessContact Details page in order to add a new businessContact
 router.get('/add', requireAuth, (req, res, next) => {
   res.render('businessContacts/details', {
-    title: "Add a new Game",
+    title: "Add a contact",
     businessContacts: '',
     displayName: req.user.displayName
   });
