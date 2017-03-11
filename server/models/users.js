@@ -1,3 +1,9 @@
+/* My Portfolio
+Author: Amandeep Aujla, JAN 2017
+File Name: users.js
+Description: Contain routes for navigation
+Website Name: https://comp308-w17-assignment2.herokuapp.com/  */
+
 // require modules for our User Model
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema; //alias for mongoose Schema

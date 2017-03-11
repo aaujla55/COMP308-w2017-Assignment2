@@ -2,7 +2,7 @@
 Author: Amandeep Aujla, JAN 2017
 File Name: index.js
 Description: Contain routes for navigation
-Website Name: https://expressportfolio-aaujla.herokuapp.com/ */
+Website Name: https://comp308-w17-assignment2.herokuapp.com/  */
 
 // modules required for routing
 var express = require('express');

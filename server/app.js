@@ -1,3 +1,9 @@
+
+ //File Name: app.js
+ //Author: Amandeep Aujla
+ //Website Name: https://comp308-w17-assignment2.herokuapp.com/ /
+ //File Description: Contains declaration of modules required for the project
+
 // modules required for the project
 var express = require('express');
 var path = require('path');

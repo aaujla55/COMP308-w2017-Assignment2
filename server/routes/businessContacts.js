@@ -1,3 +1,10 @@
+/* My Portfolio
+Author: Amandeep Aujla, JAN 2017
+File Name: businessContacts.js
+Description: Contain routes for navigation
+Website Name: https://comp308-w17-assignment2.herokuapp.com/  */
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
