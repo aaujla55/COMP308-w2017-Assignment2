@@ -1,7 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title><%= title %></title>
+    <!--CSS -->
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap.min.css' />
+       <link rel='stylesheet' href='/Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css' />
+       <link rel='stylesheet' href='/Content/reset.css'/>
+       <link rel='stylesheet' href='/Content/app.css' />
+    
+  </head>
+  
+  <body>
+  <!--Scripts -->
+    <script src ="/Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src ="/Scripts/lib/bootstrap/jquery/dist/js/bootstrap.min.js"></script>
+    <script src ="/Scripts/app.js"></script>
+
 <% include ../partials/header.ejs %>
 
 <!-- Render the Registration form  -->
-	<main class="container">
+	<main class="outerbox">
 	<!-- Display flash messages  -->
 	<% if (messages.length > 0) { %>
         <div class="alert alert-danger"><%= messages %></div>
